@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+      {/* <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover font-medium">About</a>
           <a className="link link-hover font-medium">Contact</a>
@@ -40,7 +40,7 @@ const Footer = () => {
             <span className="font-bold">Avijit Biswas</span>
           </p>
         </aside>
-      </footer>
+      </footer> */}
     </div>
   );
 };
