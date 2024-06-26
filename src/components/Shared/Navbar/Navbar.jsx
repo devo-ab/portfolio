@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-1">
           <div>
-            <Image src={code} alt="code"  width={40}></Image>
+            <Image src={code} alt="code"  width={35}></Image>
           </div>
           <a className="text-3xl font-bold">AB</a>
         </div>
