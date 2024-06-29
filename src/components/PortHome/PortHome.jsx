@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 
 const PortHome = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className='pt-16'>
+            <Banner></Banner>
         </div>
     );
 };

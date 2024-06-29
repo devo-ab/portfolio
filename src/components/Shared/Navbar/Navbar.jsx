@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import code from "../../../asset/code.png";
+import code from "../../../../public/assets/code.png";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar">
+    <div className="navbar bg-gray-700 bg-opacity-40 backdrop-filter backdrop-blur-sm z-10 fixed max-w-7xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
