@@ -26,12 +26,12 @@ const AboutMe = () => {
 
         <div className="flex flex-col md:flex-row gap-5 mt-5">
           {/* experience section */}
-          {/* <div className="flex-1">
-            <h1 className="text-2xl font-bold">Experience</h1>
+          <div className="flex-1">
+            <h1 className="text-2xl font-bold">Technical Experience</h1>
             <div className="mt-3">
               <p className="text-xl font-bold">N/A</p>
             </div>
-          </div> */}
+          </div>
 
           {/* education section */}
           <div>
