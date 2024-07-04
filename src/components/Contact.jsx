@@ -55,9 +55,9 @@ const Contact = () => {
             <div>
               <h1 className="text-4xl font-bold">Get in touch</h1>
               <p className="mt-2">
-                Let's collaborate on something great! Whether you're looking to start a new project
-                or need assistance with an existing one, I'm eager to hear from you. Reach out
-                today, and let's make something awesome together!
+                Lets collaborate on something great! Whether you are looking to start a new project
+                or need assistance with an existing one, Im eager to hear from you. Reach out
+                today, and lets make something awesome together!
               </p>
               <div className="mt-2">
                 <p className="flex gap-2 items-center">
