@@ -1,19 +1,48 @@
 "use client";
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Swal from 'sweetalert2';
 
 const Contact = () => {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const message = e.target.message.value;
-    console.log(name, email, message)
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_w8x7zok', 'template_qw12pnk', form.current, {
+        publicKey: 'F6vejV48aHOEgVBJ0',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Email send successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const name = e.target.name.value;
+  //   const email = e.target.email.value;
+  //   const message = e.target.message.value;
+  //   console.log(name, email, message)
+
+  // };
 
   return (
     <div id="contact">
@@ -68,12 +97,12 @@ const Contact = () => {
           </div>
 
           <div className="flex-1">
-            <form onSubmit={handleSubmit} noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
               <label className="block">
                 <span className="mb-1">Full name</span>
                 <input
                   type="text"
-                  name="name"
+                  name="from_name"
                   id="name"
                   required
                   placeholder="Write your name"
@@ -83,7 +112,7 @@ const Contact = () => {
               <label className="block">
                 <span className="mb-1">Email address</span>
                 <input
-                name="email"
+                name="from_email"
                   type="email"
                   id="email"
                   required
@@ -101,12 +130,13 @@ const Contact = () => {
                   className="block w-full rounded-md px-4 py-2 border border-gray-500"
                 ></textarea>
               </label>
-              <button
+              {/* <button
                 type="submit"
                 className="px-8 py-3 text-lg rounded bg-[#219C90] btn btn-ghost text-white"
               >
                 Submit
-              </button>
+              </button> */}
+              <input className="px-8 py-3 text-lg rounded bg-[#219C90] btn btn-ghost text-white hover:text-black" type="submit" value="Send" />
             </form>
           </div>
         </div>
