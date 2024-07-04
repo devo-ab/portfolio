@@ -11,15 +11,15 @@ const AboutMe = () => {
       <div className="mt-5">
         <div className="">
           <p className="md:text-lg">
-            I'm Avijit Biswas, a dedicated Front End Developer passionate about transforming ideas into seamless digital experiences. With a strong command of HTML, CSS, Tailwind CSS, and JavaScript, I specialize in crafting sleek and responsive user interfaces that captivate and engage users.
+            Im Avijit Biswas, a dedicated Front End Developer passionate about transforming ideas into seamless digital experiences. With a strong command of HTML, CSS, Tailwind CSS, and JavaScript, I specialize in crafting sleek and responsive user interfaces that captivate and engage users.
           </p>
 
           <p className="md:text-lg">
-            My journey into web development extends to React for dynamic application development and Firebase for real-time database management. I'm also well-versed in backend technologies like Express.js and MongoDB, ensuring that my projects are not only visually appealing but also robust and scalable.
+            My journey into web development extends to React for dynamic application development and Firebase for real-time database management. Im also well-versed in backend technologies like Express.js and MongoDB, ensuring that my projects are not only visually appealing but also robust and scalable.
           </p>
 
           <p className="md:text-lg hidden md:block">
-            I thrive on challenges and am committed to continuous learning, constantly exploring new technologies to expand my skill set.I believe in technology's transformative power and am eager to contribute to innovative projects, confident in my ability to tackle new challenges and excel within any development team. Let's collaborate and innovate
+            I thrive on challenges and am committed to continuous learning, constantly exploring new technologies to expand my skill set.I believe in technology transformative power and am eager to contribute to innovative projects, confident in my ability to tackle new challenges and excel within any development team. Let collaborate and innovate
             together to create impactful solutions in the ever-evolving tech landscape!
           </p>
         </div>
